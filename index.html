@@ -1,0 +1,1603 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mauli Food Agency Dhule | Farsan, Namkeen & Food Products Distributor</title>
+
+<meta name="description"
+content="Mauli Food Agency Dhule - आपल्या विश्वासाचा खाद्यपदार्थ वितरण भागीदार. Namkeen, Farsan, Cookies, Beverages and Packaged Food distribution in Dhule, Malegaon, Jalgaon and North Maharashtra.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fffaf3;
+    color:#2b1710;
+    line-height:1.6;
+}
+
+header{
+    background:#7d1717;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+}
+
+.logo small{
+    display:block;
+    color:#ffd36b;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd36b;
+}
+
+/* HERO */
+
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    linear-gradient(rgba(55,18,8,.72),rgba(55,18,8,.72)),
+    url("https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:1200px;
+    width:100%;
+    margin:auto;
+    padding:70px 25px;
+    color:white;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.1;
+    margin-bottom:12px;
+}
+
+.hero h2{
+    color:#ffd36b;
+    font-size:27px;
+    margin-bottom:20px;
+}
+
+.marathi-tagline{
+    display:inline-block;
+    background:#f4b400;
+    color:#551111;
+    padding:10px 25px;
+    font-size:23px;
+    font-weight:bold;
+    margin-bottom:20px;
+    border-radius:5px;
+}
+
+.hero p{
+    max-width:700px;
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-gold{
+    background:#ffd36b;
+    color:#601313;
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+}
+
+/* SECTIONS */
+
+section{
+    padding:75px 6%;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    color:#821818;
+    font-size:36px;
+    margin-bottom:8px;
+}
+
+.section-marathi{
+    text-align:center;
+    color:#c17b00;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.section-subtitle{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 45px;
+    color:#666;
+}
+
+/* ABOUT */
+
+.about{
+    background:white;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about-text h3{
+    color:#821818;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.about-text p{
+    margin-bottom:15px;
+}
+
+.highlight-box{
+    background:#fff2d5;
+    padding:30px;
+    border-left:6px solid #d99a00;
+    border-radius:12px;
+}
+
+.highlight-box h3{
+    color:#821818;
+    margin-bottom:15px;
+}
+
+.highlight-box p{
+    margin:8px 0;
+}
+
+/* PRODUCTS */
+
+.products{
+    background:#fff9ed;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+}
+
+.product-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-7px);
+}
+
+.product-card img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+}
+
+.product-content{
+    padding:18px;
+    text-align:center;
+}
+
+.product-content h3{
+    color:#821818;
+    margin-bottom:5px;
+}
+
+.product-content p{
+    font-size:14px;
+    color:#666;
+}
+
+/* SPECIAL SNACKS */
+
+.snacks{
+    background:white;
+}
+
+.snack-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.snack-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+    height:280px;
+}
+
+.snack-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.snack-card:hover img{
+    transform:scale(1.08);
+}
+
+.snack-overlay{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:35px 20px 20px;
+    color:white;
+    background:linear-gradient(transparent,rgba(0,0,0,.85));
+}
+
+.snack-overlay h3{
+    font-size:25px;
+}
+
+/* BRAND */
+
+.brand-section{
+    background:#821818;
+    color:white;
+    text-align:center;
+}
+
+.brand-section .section-title{
+    color:white;
+}
+
+.brand-section .section-marathi{
+    color:#ffd36b;
+}
+
+.brand-box{
+    max-width:650px;
+    margin:auto;
+    background:white;
+    color:#821818;
+    padding:35px;
+    border-radius:15px;
+    font-size:27px;
+    font-weight:bold;
+}
+
+/* SERVICE AREAS */
+
+.delivery{
+    background:#fffaf3;
+}
+
+.area-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.area{
+    background:#821818;
+    color:white;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.area span{
+    display:block;
+    color:#ffd36b;
+    font-size:14px;
+    margin-top:5px;
+}
+
+/* WHY US */
+
+.why-us{
+    background:white;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.why-card{
+    background:#fff5df;
+    padding:28px 18px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.why-icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.why-card h3{
+    color:#821818;
+    margin-bottom:7px;
+}
+
+/* CATALOGUE */
+
+.catalogue{
+    background:#f7e5c5;
+    text-align:center;
+}
+
+.catalogue-box{
+    max-width:850px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.catalogue-box h3{
+    color:#821818;
+    font-size:27px;
+    margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#fff9ed;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact-info{
+    background:#821818;
+    color:white;
+    padding:35px;
+    border-radius:18px;
+}
+
+.contact-info h3{
+    color:#ffd36b;
+    font-size:27px;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin-bottom:13px;
+}
+
+.contact-info a{
+    color:#ffd36b;
+}
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+form h3{
+    color:#821818;
+    margin-bottom:20px;
+    font-size:25px;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+}
+
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.submit-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    background:#821818;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.submit-btn:hover{
+    background:#a32222;
+}
+
+/* FOOTER */
+
+footer{
+    background:#4b0d0d;
+    color:white;
+    padding:45px 6% 20px;
+}
+
+.footer-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+footer h3{
+    color:#ffd36b;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin-bottom:8px;
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.2);
+    margin-top:30px;
+    padding-top:20px;
+    font-size:13px;
+}
+
+/* FLOATING BUTTONS */
+
+.float-buttons{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    z-index:2000;
+}
+
+.float-btn{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:white;
+    font-size:24px;
+    box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+
+.call{
+    background:#1265c0;
+}
+
+.whatsapp{
+    background:#20c963;
+}
+
+/* LANGUAGE */
+
+.language{
+    margin-top:25px;
+}
+
+.language button{
+    border:1px solid white;
+    background:transparent;
+    color:white;
+    padding:7px 13px;
+    margin:3px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+/* MOBILE */
+
+@media(max-width:950px){
+
+    nav{
+        display:none;
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .area-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+        min-height:620px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero h2{
+        font-size:19px;
+    }
+
+    .marathi-tagline{
+        font-size:17px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    section{
+        padding:55px 5%;
+    }
+
+    .section-title{
+        font-size:29px;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .snack-grid{
+        grid-template-columns:1fr;
+    }
+
+    .area-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .product-card img{
+        height:145px;
+    }
+
+}
+
+/* LANGUAGE ALERT */
+.lang-message{
+    margin-top:12px;
+    font-size:13px;
+    color:#ffd36b;
+}
+</style>
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+MAULI FOOD AGENCY
+<small>DHULE • MAHARASHTRA</small>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About Us</a>
+<a href="#products">Products</a>
+<a href="#brands">Brands</a>
+<a href="#areas">Service Areas</a>
+<a href="#catalogue">Catalogue</a>
+<a href="#contact">Enquiry</a>
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="marathi-tagline">
+गुणवत्तापूर्ण खाद्यपदार्थ, विश्वासार्ह वितरण सेवा!
+</div>
+
+<h1>Mauli Food Agency Dhule</h1>
+
+<h2>Farsan • Namkeen • Cookies • Beverages • Packaged Food</h2>
+
+<p>
+<strong>आपल्या विश्वासाचा खाद्यपदार्थ वितरण भागीदार.</strong><br>
+Your trusted food products distribution partner for retailers,
+shops and businesses across North Maharashtra.
+</p>
+
+<p>
+धुळे, मालेगाव, जळगाव आणि उत्तर महाराष्ट्रातील दुकानदार व
+व्यावसायिकांसाठी खाद्यपदार्थ वितरण सेवा.
+</p>
+
+<div class="buttons">
+
+<a href="tel:9764591604" class="btn btn-gold">
+📞 कॉल करा / Call Now
+</a>
+
+<a href="https://wa.me/919834632257?text=Hello%20Mauli%20Food%20Agency,%20I%20want%20information%20about%20your%20products."
+class="btn btn-outline">
+💬 WhatsApp वर चौकशी करा
+</a>
+
+<a href="#products" class="btn btn-outline">
+📦 उत्पादने पहा / View Products
+</a>
+
+</div>
+
+<div class="language">
+
+<button onclick="showLanguage('English')">
+English
+</button>
+
+<button onclick="showLanguage('मराठी')">
+मराठी
+</button>
+
+<button onclick="showLanguage('हिन्दी')">
+हिन्दी
+</button>
+
+<div id="languageMessage" class="lang-message"></div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+About Us | आमच्याबद्दल
+</h2>
+
+<div class="section-marathi">
+“आपला व्यवसाय, आमची जबाबदारी!”
+</div>
+
+<p class="section-subtitle">
+गुणवत्तापूर्ण उत्पादने, विश्वासाचे नाते आणि वेळेवर सेवा —
+हाच आमचा प्रयत्न!
+</p>
+
+<div class="about-grid">
+
+<div class="about-text">
+
+<h3>Mauli Food Agency Dhule</h3>
+
+<p>
+Mauli Food Agency ही धुळे येथील खाद्यपदार्थ वितरण संस्था आहे.
+आम्ही विविध खाद्यपदार्थ दुकानदार, किराणा स्टोअर्स आणि
+व्यावसायिकांपर्यंत पोहोचवण्याचे काम करतो.
+</p>
+
+<p>
+Our aim is simple — to provide quality food products,
+reliable distribution and responsive customer service.
+</p>
+
+<p>
+<strong>“चांगली उत्पादने, विश्वासाचे नाते आणि वेळेवर सेवा!”</strong>
+</p>
+
+</div>
+
+<div class="highlight-box">
+
+<h3>Business Details</h3>
+
+<p>👤 <strong>Owner:</strong> Vaibhav Gharte</p>
+
+<p>📍 <strong>Address:</strong> Near GTP Stop, Deopur, Dhule</p>
+
+<p>📍 <strong>District:</strong> Dhule, Maharashtra</p>
+
+<p>📞 <strong>Phone:</strong> 9764591604</p>
+
+<p>💬 <strong>WhatsApp:</strong> 9834632257</p>
+
+<p>✉️ <strong>Email:</strong> ghartechetaan78@gmail.com</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products" id="products">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Products | आमची उत्पादने
+</h2>
+
+<div class="section-marathi">
+“दर्जेदार उत्पादने — आपल्या दुकानासाठी योग्य निवड!”
+</div>
+
+<p class="section-subtitle">
+We distribute a range of food products for retailers,
+shops and businesses.
+</p>
+
+<div class="product-grid">
+
+
+<!-- NAMKEEN -->
+
+<div class="product-card">
+
+<img
+src="https://images.unsplash.com/photo-1593001874117-c99c800e3ebc?auto=format&fit=crop&w=700&q=80"
+alt="Namkeen snacks">
+
+<div class="product-content">
+
+<h3>Namkeen</h3>
+
+<p>
+चविष्ट आणि कुरकुरीत नमकीन प्रकार
+</p>
+
+</div>
+
+</div>
+
+
+<!-- FARSAN -->
+
+<div class="product-card">
+
+<img
+src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=700&q=80"
+alt="Indian farsan">
+
+<div class="product-content">
+
+<h3>Farsan</h3>
+
+<p>
+पारंपरिक आणि स्वादिष्ट फरसाण
+</p>
+
+</div>
+
+</div>
+
+
+<!-- COOKIES -->
+
+<div class="product-card">
+
+<img
+src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=700&q=80"
+alt="Cookies">
+
+<div class="product-content">
+
+<h3>Cookies</h3>
+
+<p>
+दर्जेदार कुकीज आणि बिस्कीट प्रकार
+</p>
+
+</div>
+
+</div>
+
+
+<!-- BEVERAGES -->
+
+<div class="product-card">
+
+<img
+src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=80"
+alt="Beverages">
+
+<div class="product-content">
+
+<h3>Beverages</h3>
+
+<p>
+विविध पेये आणि रिफ्रेशिंग ड्रिंक्स
+</p>
+
+</div>
+
+</div>
+
+
+<!-- PACKAGED FOOD -->
+
+<div class="product-card">
+
+<img
+src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80"
+alt="Packaged food">
+
+<div class="product-content">
+
+<h3>Packaged Food</h3>
+
+<p>
+गुणवत्तापूर्ण पॅकेज्ड फूड उत्पादने
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SPECIAL SNACKS ================= -->
+
+<section class="snacks">
+
+<div class="container">
+
+<h2 class="section-title">
+Popular Farsan & Snacks
+</h2>
+
+<div class="section-marathi">
+“महाराष्ट्रीयन चवीचा खास स्वाद!”
+</div>
+
+<p class="section-subtitle">
+Traditional snacks that customers love.
+</p>
+
+<div class="snack-grid">
+
+
+<div class="snack-card">
+
+<img
+src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=1000&q=85"
+alt="Chakli and Indian snacks">
+
+<div class="snack-overlay">
+
+<h3>🥨 Chakli | चकली</h3>
+
+<p>
+कुरकुरीत • स्वादिष्ट • पारंपरिक
+</p>
+
+</div>
+
+</div>
+
+
+<div class="snack-card">
+
+<img
+src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=85"
+alt="Karanji Indian snack">
+
+<div class="snack-overlay">
+
+<h3>🥟 Karanji | करंजी</h3>
+
+<p>
+पारंपरिक चव आणि आकर्षक स्वरूप
+</p>
+
+</div>
+
+</div>
+
+
+<div class="snack-card">
+
+<img
+src="https://images.unsplash.com/photo-1593001874117-c99c800e3ebc?auto=format&fit=crop&w=1000&q=85"
+alt="Namkeen snacks">
+
+<div class="snack-overlay">
+
+<h3>🥜 Namkeen | नमकीन</h3>
+
+<p>
+प्रत्येक घासात चव आणि कुरकुरीतपणा
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= BRANDS ================= -->
+
+<section class="brand-section" id="brands">
+
+<div class="container">
+
+<h2 class="section-title">
+Brands We Distribute | आमचे ब्रँड
+</h2>
+
+<div class="section-marathi">
+“विश्वासू ब्रँड्सची उत्पादने, आपल्या व्यवसायासाठी!”
+</div>
+
+<p class="section-subtitle" style="color:#f8dddd;">
+
+We distribute food products from selected brands
+serving customers across our distribution areas.
+
+</p>
+
+<div class="brand-box">
+
+Nashik's Food Products
+
+<br>
+
+<span style="font-size:16px;font-weight:normal;color:#666;">
+Quality Products • Reliable Supply • Trusted Service
+</span>
+
+</div>
+
+<br>
+
+<a
+href="https://wa.me/919834632257?text=Hello%20Mauli%20Food%20Agency,%20please%20send%20me%20your%20brand%20and%20product%20list."
+class="btn btn-gold">
+
+🏷️ ब्रँडची माहिती मिळवा / Get Brand List
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= DELIVERY AREAS ================= -->
+
+<section class="delivery" id="areas">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Service Areas | आमची वितरण सेवा
+</h2>
+
+<div class="section-marathi">
+“धुळेपासून उत्तर महाराष्ट्रापर्यंत — विश्वासाने वितरण!”
+</div>
+
+<p class="section-subtitle">
+
+We serve retailers and businesses across selected
+areas of North Maharashtra.
+
+</p>
+
+<div class="area-grid">
+
+<div class="area">
+📍 Dhule
+<span>धुळे</span>
+</div>
+
+<div class="area">
+📍 Malegaon
+<span>मालेगाव</span>
+</div>
+
+<div class="area">
+📍 Jalgaon
+<span>जळगाव</span>
+</div>
+
+<div class="area">
+📍 North Maharashtra
+<span>उत्तर महाराष्ट्र</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="why-us">
+
+<div class="container">
+
+<h2 class="section-title">
+Why Choose Us? | आम्हाला का निवडावे?
+</h2>
+
+<div class="section-marathi">
+“आपल्या व्यवसायाच्या वाढीसाठी विश्वासू भागीदार!”
+</div>
+
+<div class="why-grid">
+
+
+<div class="why-card">
+
+<div class="why-icon">✅</div>
+
+<h3>Quality Products</h3>
+
+<p>
+दर्जेदार आणि निवडक उत्पादने
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">🚚</div>
+
+<h3>Reliable Distribution</h3>
+
+<p>
+वेळेवर आणि विश्वासार्ह वितरण सेवा
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">🤝</div>
+
+<h3>Trusted Service</h3>
+
+<p>
+ग्राहकांशी विश्वासाचे नाते
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">📞</div>
+
+<h3>Easy Enquiry</h3>
+
+<p>
+फोन आणि WhatsApp वर सहज संपर्क
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CATALOGUE ================= -->
+
+<section class="catalogue" id="catalogue">
+
+<div class="container">
+
+<h2 class="section-title">
+Product Catalogue | उत्पादन कॅटलॉग
+</h2>
+
+<div class="section-marathi">
+“उत्पादनांची माहिती आणि कॅटलॉग आता WhatsApp वर मिळवा!”
+</div>
+
+<div class="catalogue-box">
+
+<h3>
+आपल्या व्यवसायासाठी आवश्यक उत्पादने एका ठिकाणी.
+</h3>
+
+<p>
+
+For our latest product list, available brands,
+product details and distribution information,
+send us a WhatsApp message.
+
+</p>
+
+<br>
+
+<a
+href="https://wa.me/919834632257?text=नमस्कार,%20मला%20Mauli%20Food%20Agency%20चा%20Product%20Catalogue%20पाहिजे."
+class="btn btn-gold">
+
+📲 WhatsApp वर कॅटलॉग मिळवा
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<h2 class="section-title">
+Contact & Enquiry | संपर्क व चौकशी
+</h2>
+
+<div class="section-marathi">
+“आजच आमच्याशी संपर्क साधा आणि उत्पादनांची माहिती मिळवा.”
+</div>
+
+<p class="section-subtitle">
+For product enquiries, catalogue requests and distribution enquiries,
+contact us directly.
+</p>
+
+<div class="contact-grid">
+
+
+<!-- CONTACT DETAILS -->
+
+<div class="contact-info">
+
+<h3>
+Mauli Food Agency Dhule
+</h3>
+
+<p>
+👤 <strong>Owner:</strong><br>
+Vaibhav Gharte
+</p>
+
+<p>
+📞 <strong>Phone:</strong><br>
+<a href="tel:9764591604">
+9764591604
+</a>
+</p>
+
+<p>
+💬 <strong>WhatsApp:</strong><br>
+<a href="https://wa.me/919834632257">
+9834632257
+</a>
+</p>
+
+<p>
+✉️ <strong>Email:</strong><br>
+<a href="mailto:ghartechetaan78@gmail.com">
+ghartechetaan78@gmail.com
+</a>
+</p>
+
+<p>
+📍 <strong>Address:</strong><br>
+Near GTP Stop,<br>
+Deopur, Dhule,<br>
+Maharashtra
+</p>
+
+<br>
+
+<a
+href="tel:9764591604"
+class="btn btn-gold">
+
+📞 Call Now
+
+</a>
+
+</div>
+
+
+<!-- ENQUIRY FORM -->
+
+<form onsubmit="sendEnquiry(event)">
+
+<h3>
+Customer Enquiry
+</h3>
+
+<p style="margin-bottom:20px;color:#777;">
+आपली चौकशी येथे पाठवा
+</p>
+
+<input
+type="text"
+id="name"
+placeholder="Your Name / आपले नाव"
+required>
+
+<input
+type="tel"
+id="phone"
+placeholder="Mobile Number / मोबाईल नंबर"
+required>
+
+<input
+type="text"
+id="business"
+placeholder="Shop / Business Name / दुकानाचे नाव">
+
+<select id="product" required>
+
+<option value="">
+Select Product / उत्पादन निवडा
+</option>
+
+<option>Namkeen / नमकीन</option>
+
+<option>Farsan / फरसाण</option>
+
+<option>Cookies / कुकीज</option>
+
+<option>Beverages / पेये</option>
+
+<option>Packaged Food / पॅकेज्ड फूड</option>
+
+<option>Other / इतर</option>
+
+</select>
+
+<textarea
+id="message"
+placeholder="Your Enquiry / आपली चौकशी">
+</textarea>
+
+<button
+type="submit"
+class="submit-btn">
+
+💬 WhatsApp वर चौकशी पाठवा
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>MAULI FOOD AGENCY</h3>
+
+<p>
+Farsan • Namkeen • Cookies
+</p>
+
+<p>
+Beverages • Packaged Food
+</p>
+
+<br>
+
+<p>
+<strong>
+“आपल्या व्यवसायाचा विश्वासू खाद्यपदार्थ वितरण भागीदार!”
+</strong>
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Contact Information</h3>
+
+<p>📞 9764591604</p>
+
+<p>💬 9834632257</p>
+
+<p>✉️ ghartechetaan78@gmail.com</p>
+
+<p>📍 Near GTP Stop, Deopur, Dhule</p>
+
+</div>
+
+
+<div>
+
+<h3>Quick Links</h3>
+
+<p><a href="#home" style="color:white;">Home</a></p>
+
+<p><a href="#about" style="color:white;">About Us</a></p>
+
+<p><a href="#products" style="color:white;">Products</a></p>
+
+<p><a href="#brands" style="color:white;">Brands</a></p>
+
+<p><a href="#areas" style="color:white;">Service Areas</a></p>
+
+<p><a href="#contact" style="color:white;">Contact</a></p>
+
+</div>
+
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 Mauli Food Agency Dhule.
+All Rights Reserved.
+
+<br>
+
+गुणवत्तापूर्ण खाद्यपदार्थ • विश्वासार्ह सेवा • मजबूत व्यावसायिक नाते
+
+</div>
+
+</footer>
+
+
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<div class="float-buttons">
+
+<a
+href="tel:9764591604"
+class="float-btn call"
+title="Call Mauli Food Agency">
+
+📞
+
+</a>
+
+<a
+href="https://wa.me/919834632257?text=Hello%20Mauli%20Food%20Agency,%20I%20want%20information%20about%20your%20products."
+class="float-btn whatsapp"
+title="WhatsApp Mauli Food Agency">
+
+💬
+
+</a>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function sendEnquiry(event){
+
+event.preventDefault();
+
+let name =
+document.getElementById("name").value;
+
+let phone =
+document.getElementById("phone").value;
+
+let business =
+document.getElementById("business").value;
+
+let product =
+document.getElementById("product").value;
+
+let message =
+document.getElementById("message").value;
+
+
+let whatsappMessage =
+"नमस्कार Mauli Food Agency,%0A%0A" +
+
+"मला आपल्या उत्पादनांबद्दल चौकशी करायची आहे.%0A%0A" +
+
+"नाव: " + encodeURIComponent(name) + "%0A" +
+
+"मोबाईल: " + encodeURIComponent(phone) + "%0A" +
+
+"दुकान/व्यवसाय: " + encodeURIComponent(business) + "%0A" +
+
+"उत्पादन: " + encodeURIComponent(product) + "%0A" +
+
+"चौकशी: " + encodeURIComponent(message);
+
+
+window.open(
+"https://wa.me/919834632257?text=" + whatsappMessage,
+"_blank"
+);
+
+}
+
+
+function showLanguage(language){
+
+let message =
+document.getElementById("languageMessage");
+
+if(language === "मराठी"){
+
+message.innerHTML =
+"मराठी: आपल्या विश्वासाचा खाद्यपदार्थ वितरण भागीदार!";
+
+}
+
+else if(language === "हिन्दी"){
+
+message.innerHTML =
+"हिन्दी: आपके विश्वास का खाद्य उत्पाद वितरण भागीदार!";
+
+}
+
+else{
+
+message.innerHTML =
+"English: Your trusted food products distribution partner.";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
+```
